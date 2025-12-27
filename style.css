@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+body {
+  background: url("assets/images/love-bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #222;
+}
+
+
+/* VERY LIGHT OVERLAY (background visible) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+  z-index: -1;
+}
+
+/* GLASS SECTIONS */
+.hero, .countdown, .promises {
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  margin: 15px;
+  padding: 25px 15px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ff4d6d;
+  font-size: 2.2rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+}
+
+/* COUNTDOWN */
+.countdown h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.timer div {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 70px;
+  text-align: center;
+}
+
+.timer span {
+  color: #ff4d6d;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* MONTH BUTTONS */
+.month-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.month-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 0.85rem;
+}
+
+/* PROMISE BOX */
+.promise-box {
+  background: rgba(243, 238, 238, 0.9);
+  padding: 10px;
+  border-radius: 15px;
+  min-height: 90px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+/* NOTE SECTION */
+.note-box {
+  background: rgba(233, 225, 225, 0.815); /* very light glass */
+  backdrop-filter: blur(3px);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.note-box h3 {
+  margin-bottom: 8px;
+  color: #4d0311;
+  font-size: 1rem;
+}
+
+.note-box p {
+  line-height: 1.5;
+}
+
+
+/* FINAL BUTTON */
+.love-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #e75b75;
+  color: white;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #080001;
+}
+
+/* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  animation: pop 0.4s ease;
+}
+
+.popup-content h1 {
+  color: #ff4d6d;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

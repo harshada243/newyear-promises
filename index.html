@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>12 Promises For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Happy New Year ❤️</h1>
+    <p class="name">ADITYA</p>
+    <p class="subtitle">12 Months • 12 Promises</p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown">
+    <h2>Countdown To Our New Year 💫</h2>
+    <div class="timer">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Min</small></div>
+      <div><span id="seconds">00</span><small>Sec</small></div>
+    </div>
+  </section>
+  
+  <!-- PROMISE DISPLAY -->
+<div id="promiseBox" class="promise-box">
+  Tap a month to read my promise 💕
+</div>
+
+  <!-- PROMISES -->
+  <div class="month-buttons">
+  <button onclick="showPromise(0)">January</button>
+  <button onclick="showPromise(1)">February</button>
+  <button onclick="showPromise(2)">March</button>
+  <button onclick="showPromise(3)">April</button>
+  <button onclick="showPromise(4)">May</button>
+  <button onclick="showPromise(5)">June</button>
+  <button onclick="showPromise(6)">July</button>
+  <button onclick="showPromise(7)">August</button>
+  <button onclick="showPromise(8)">September</button>
+  <button onclick="showPromise(9)">October</button>
+  <button onclick="showPromise(10)">November</button>
+  <button onclick="showPromise(11)">December</button>
+</div>
+
+<!-- NOTE SECTION -->
+<div class="note-box">
+  <h3>💌 A Note</h3>
+  <p>
+   These 12 promises are not just for one year they are my truth, my effort, and my heart.These 12 promises are my heart written month by month. I know I hurt you in the past, and I will never deny that truth. But I also know how deeply I love you and how much I want to make things right. I’m choosing maturity, patience, and growth every single day.💖
+
+    I promise to be loyal, to support you in every tough situation, and to never make you feel alone again. I will focus on my career, work hard, and build myself into someone stronger and more responsible. I’ll make fewer mistakes, learn from the old ones, and prove my love through actions, not just words.💖
+
+    I may not be able to fix everything instantly, but I promise to do every small thing with honesty and care. By the end of this December, I promise to win your trust again not by asking for it, but by earning it. I love you so much, and my heart is still choosing you, always.💖
+  </p>
+</div>
+
+    <button class="love-btn" onclick="openLove()"> Click here, Final Message 💌</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>I choose you. Every day. Forever. I just want one promise from you...always choose himself first no matter what someone did for you .... Being thankful for care is beautiful, but you don’t owe your freedom to anyone. Never confuse love with control.just keep in mind you are not for these things ... you are a high flying bird who just know how to fly high! (i noticed i said baki tuzi marji all choices are your after-all )💍</p>
+  </footer>
+
+  <!-- LOVE POPUP -->
+  <div id="lovePopup" class="popup">
+    <div class="popup-content">
+      <h1>I LOVE YOU SO MUCH!<br>ADITYA ❤️<br>Take your time, I'll wait for you  </h1>
+      <button onclick="closeLove()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
